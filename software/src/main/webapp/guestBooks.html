@@ -1,0 +1,28 @@
+
+
+<h3>Specify options if you'd like :</h3>
+<form id="GenreForm"  onsubmit="BookGet(); return false;">
+    <label for="genre1">Book Genre:</label>
+    <input id="genre1" name="genre" type="text"><br>
+
+    <label for="title">Title:</label>
+    <input id="title" name="title" type="text"><br>
+
+    <label for="authors">Authors:</label>
+    <input id="authors" name="authors" type="text"><br><br>
+
+    <label for="fromYear">From year:</label>
+    <input id="fromYear" name="fromYear" type="number"><br>
+
+    <label for="toYear">To year:</label>
+    <input id="toYear" name="toYear" type="number"><br><br>
+
+    <label for="fromPage">From page Number:</label>
+    <input id="fromPage" name="fromPage" type="number"><br>
+
+    <label for="toPage">To page Number:</label>
+    <input id="toPage" name="toPage" type="number"><br><br>
+    <input type="submit" value="Get books"><br>
+</form>
+
+<div id="result"></div>

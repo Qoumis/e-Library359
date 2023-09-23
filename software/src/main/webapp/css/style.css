@@ -1,0 +1,188 @@
+
+body{
+    background-color: whitesmoke;
+    margin : 0;
+}
+
+table th{                       /*Add style to table header*/
+    border: 1px solid #000000;
+    text-align: left;
+    background-color: #2aa6ca;
+    padding: 4px 30px 4px 8px;
+}
+
+table td{                       /*Add style to table columns*/
+    border: 1px solid #000000;
+    padding: 4px 8px;
+    color: black;
+}
+
+table tr:nth-child(odd) td{   /* Zebra effect on rows*/
+    background-color: #a4a4a4;
+}
+
+
+label{
+    float: left;
+    width: 155px;
+}
+
+.mybtn{
+    margin-left: 20px;
+}
+
+.column, #logForm{
+    display:inline-block;
+    float: left;
+    padding: 10px;
+    margin-right:2%;
+    margin-left:2%;
+    min-height:400px;
+    align-content: center;
+    width: 550px;
+}
+
+header {
+    color: white;
+    background-color: #1c191f;
+    font-size: 20px;
+    font-family: LexiaRegular,georgia,sans-serif;
+}
+
+#footer{
+    position: fixed;
+    bottom: 0px;
+    width: 100%;
+    height: 200px;
+    background: #606060;
+
+}
+
+.myCol{
+    display:inline-block;
+    float: left;
+    margin-right:10%;
+    margin-left:10%;
+}
+
+#maincont{
+    min-height: 100%;
+}
+
+a, .myCol p{
+    color: white;
+    padding-left: 30px;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+a:hover{                /* remove underline on link just reduce it's opacity on mouse over*/
+    opacity: 85%;
+    text-decoration: none;
+    color: white;
+}
+
+#icontxt{
+    position: absolute;
+    left: 90px;
+    top: -2px;
+}
+
+button, input[type="button"], input[type="submit"]{
+    background-color: #fafbfc;
+    border: 1px solid;
+    border-radius: 6px;
+    color: #303036;
+    cursor: pointer;
+    font-family: Arial, sans-serif;
+    font-size: 15px;
+    font-weight: 550;
+    padding: 5px 15px;
+}
+
+button:hover {
+    background-color: #f3f4f6;
+}
+
+.mycontainer{
+    background-color: white;
+    padding: 20px 0px 20px 300px;
+    display: flex;
+}
+
+#welcomemsg{
+    font-family: LexiaRegular,georgia,serif;
+    font-weight: 450;
+    font-size: 35px;
+    color: #282828;
+    position: relative;
+    left: 15%;
+
+}
+
+h2, h3{
+    font-family: LexiaRegular,georgia,serif;
+    color: #313131;
+    font-weight: 420;
+}
+
+@media screen and (max-width: 1100px){
+
+    .mycontainer{
+        padding: 0px 0px 0px 10px;
+    }
+    .myCol{
+        margin-right:2%;
+        margin-left:10%;
+    }
+
+}
+@media screen and (max-width: 1380px){
+    .myCol{
+        margin-right:2%;
+        margin-left:10%;
+    }
+}
+
+
+#mynav{
+    overflow: hidden;
+    position: sticky;
+    left: 0;
+    right: 0;
+    background-color: #333333FF;
+    display: flex;
+    justify-content: center;
+}
+
+#mynav a {
+    color: white;
+    text-align: center;
+    padding: 12px 15px;
+    text-decoration: none;
+    float: left;
+    display: block;
+    font-size: 20px;
+}
+
+#mynav a:hover {
+    background-color: #575757;
+    opacity: 90%;
+}
+
+.column1{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+#pie{
+    width: 900px;
+    height: 500px;
+}
+
+#lblink{
+    color: blue;
+    padding-left: 0px;
+    cursor: pointer;
+}

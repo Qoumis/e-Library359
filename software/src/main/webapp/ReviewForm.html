@@ -1,0 +1,16 @@
+<h2>Write your review</h2>
+
+<form onsubmit="ReviewPost(isbn); return false">
+    <label for="score">Book rating score</label>
+    <select id="score" name="reviewScore" required>
+        <option value="1">1 - The Worst</option>
+        <option value="2">2 - Bad</option>
+        <option value="3">3 - Neutral</option>
+        <option value="4">4 - Good</option>
+        <option value="5">5 - Excellent</option>
+    </select><br><br><br>
+
+    <label for="reviewText">Add a description :</label>
+    <input type="text" id="reviewText" name="reviewText">
+    <input type="submit" value="Upload review">
+</form>

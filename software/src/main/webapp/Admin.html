@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>E-library359 | Administration </title>
+
+    <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/AdminAjax.js" > </script>
+    <script src="js/utils.js" > </script>
+</head>
+<body>
+<header>
+    <a href="http://localhost:8080/hy359_project/">
+        <img src="assets/library_11.png" alt="library icon" width="50" height="50" >
+        <p id="icontxt">E-library359</p>
+    </a>
+</header>
+
+<div class="mycontainer">
+    <h1 id="welcomemsg">Please fill in the administrator credentials to continue</h1>
+</div>
+<div id="operations">
+    <br><br>
+    <form id="logForm" name="loginForm" onsubmit="login(); return false;">
+        <label for="username">username:</label>
+        <input type="text" id="username" name="username" required=""><br><br>
+        <label for="pass">password:</label>
+        <input type="password" name="password" id="pass" required=""><br><br>
+        <input type="submit"  value="Login">
+        <span id="msg" ></span><br>
+    </form>
+</div>
+
+<div class="column1">
+    <div id="content" class="column"></div>
+    <div id="pie"></div>
+</div>
+
+
+</body>
+</html>
+
+<style>
+    #welcomemsg{
+        left: initial;
+        right: 10%;
+    }
+    .mycontainer{
+        justify-content: center;
+    }
+</style>
